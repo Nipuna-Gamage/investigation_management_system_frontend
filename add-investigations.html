@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Investigations - Investigation Management Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="ministry-logo.png" alt="Ministry Logo">
+            </div>
+            
+            <div class="menu-section">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="my-cases.html"><i class="fas fa-folder"></i>My cases</a></li>
+                    <li class="active"><a href="add-investigations.html"><i class="fas fa-plus"></i>Add investigations</a></li>
+                    <li><a href="search-person.html"><i class="fas fa-user"></i>Search person</a></li>
+                    <li><a href="reports.html"><i class="fas fa-chart-bar"></i>Reports</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3>OTHERS</h3>
+                <ul>
+                    <li class="has-submenu">
+                        <a href="#"><i class="fas fa-cog"></i>Settings</a>
+                        <ul class="submenu">
+                            <li><a href="Settings/add-officers.html"><i class="fas fa-user-plus"></i>Add Officers</a></li>
+                            <li><a href="Settings/edit-officers.html"><i class="fas fa-user-edit"></i>Edit Officers</a></li>
+                            <li><a href="Settings/receiving-types.html"><i class="fas fa-list-alt"></i>Receiving Types</a></li>
+                            <li><a href="Settings/common-issues.html"><i class="fas fa-exclamation-circle"></i>Common Issues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accounts.html"><i class="fas fa-users"></i>Accounts</a></li>
+                    <li><a href="help.html"><i class="fas fa-question-circle"></i>Help</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="header-title">
+                    <h1>State Ministry of Home Affairs</h1>
+                    <h2>Investigation Management Portal</h2>
+                </div>
+                <div class="user-profile">
+                    <img src="profile-pic.jpg" alt="Profile Picture">
+                    <div class="user-info">
+                        <h3>Didula</h3>
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="investigation-form-container">
+                    <h2>Add Investigation Details</h2>
+                    <form class="investigation-form">
+                        <div class="form-group">
+                            <label for="type">Type</label>
+                            <select id="type" required>
+                                <option value="">Select Type</option>
+                                <option value="type1">විමර්ශන</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="receiveType">Receive Type</label>
+                            <select id="receiveType" required>
+                                <option value="">Select Receive Type</option>
+                                <option value="type1">ඍජුව</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="receivedDate">Received Date</label>
+                            <input type="date" id="receivedDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complainBy">Complain By</label>
+                            <textarea id="complainBy" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dateSentToInv">Date Sent to Investigation Branch</label>
+                            <input type="date" id="dateSentToInv" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="summary">Summary</label>
+                            <textarea id="summary" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complainType">Complain Type</label>
+                            <input type="text" id="complainType" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complainAgainst">Complain Against</label>
+                            <textarea id="complainAgainst" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="district">District</label>
+                            <select id="district" required>
+                                <option value="">Select District</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="divSecretariat">Divisional Secretariat</label>
+                            <select id="divSecretariat" required>
+                                <option value="">Select Secretariat</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="delegatingDate">Date of Delegating Power</label>
+                            <input type="date" id="delegatingDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fileRef">File Reference</label>
+                            <input type="text" id="fileRef">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="appointTo">Appoint To</label>
+                            <select id="appointTo" required>
+                                <option value="">Select Person</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="completionDate">Date to be Completed</label>
+                            <input type="date" id="completionDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="scanCopy">Scan Copy</label>
+                            <input type="file" id="scanCopy" class="file-input">
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-cancel">Cancel</button>
+                            <button type="reset" class="btn btn-reset">Reset</button>
+                            <button type="submit" class="btn btn-save">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <p>© 2024 Inquiry Management Portal. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
