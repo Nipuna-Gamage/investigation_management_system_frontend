@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiving Types - Investigation Management Portal</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with updated settings submenu -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="../ministry-logo.png" alt="Ministry Logo">
+            </div>
+            
+            <div class="menu-section">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="my-cases.html"><i class="fas fa-folder"></i>My cases</a></li>
+                    <li><a href="add-investigations.html"><i class="fas fa-plus"></i>Add investigations</a></li>
+                    <li><a href="search-person.html"><i class="fas fa-user"></i>Search person</a></li>
+                    <li><a href="reports.html"><i class="fas fa-chart-bar"></i>Reports</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3>OTHERS</h3>
+                <ul>
+                    <li class="has-submenu">
+                        <a href="#"><i class="fas fa-cog"></i>Settings</a>
+                        <ul class="submenu">
+                            <li><a href="add-officers.html"><i class="fas fa-user-plus"></i>Add Officers</a></li>
+                            <li><a href="edit-officers.html"><i class="fas fa-user-edit"></i>Edit Officers</a></li>
+                            <li class="active"><a href="receiving-types.html"><i class="fas fa-list-alt"></i>Receiving Types</a></li>
+                            <li><a href="common-issues.html"><i class="fas fa-exclamation-circle"></i>Common Issues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accounts.html"><i class="fas fa-users"></i>Accounts</a></li>
+                    <li><a href="help.html"><i class="fas fa-question-circle"></i>Help</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <div class="header-title">
+                    <h1>State Ministry of Home Affairs</h1>
+                    <h2>Investigation Management Portal</h2>
+                </div>
+                <div class="user-profile">
+                    <img src="profile-pic.jpg" alt="Profile Picture">
+                    <div class="user-info">
+                        <h3>Didula</h3>
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="receiving-types-container">
+                    <div class="page-header">
+                        <h2>Receiving Types</h2>
+                        <a href="add-new.html" class="btn btn-add" id="addNewType">
+                            <i class="fas fa-plus"></i> Add new
+                        </a>
+                    </div>
+
+                    <div class="receiving-types-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Receiving Type</th>
+                                    <th>Status</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1905 මහජන පැමිණිලි</td>
+                                    <td>Active</td>
+                                    <td><a href="#" class="edit-link">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ඍජුව</td>
+                                    <td>Active</td>
+                                    <td><a href="#" class="edit-link">Edit</a></td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Add/Edit Modal -->
+                <div class="modal" id="typeModal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Add/Edit Receiving Type</h3>
+                            <button class="close-modal">&times;</button>
+                        </div>
+                        <form class="type-form">
+                            <div class="form-group">
+                                <label for="typeName">Receiving Type<span class="required">*</span></label>
+                                <input type="text" id="typeName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="typeStatus">Status</label>
+                                <select id="typeStatus">
+                                    <option value="Active">Active</option>
+                                    <option value="Inactive">Inactive</option>
+                                </select>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-cancel">Cancel</button>
+                                <button type="submit" class="btn btn-save">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
