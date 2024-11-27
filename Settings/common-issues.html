@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Issues - Investigation Management Portal</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="../ministry-logo.png" alt="Ministry Logo">
+            </div>
+            
+            <div class="menu-section">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="../index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="../my-cases.html"><i class="fas fa-folder"></i>My cases</a></li>
+                    <li><a href="../add-investigations.html"><i class="fas fa-plus"></i>Add investigations</a></li>
+                    <li><a href="../search-person.html"><i class="fas fa-user"></i>Search person</a></li>
+                    <li><a href="../reports.html"><i class="fas fa-chart-bar"></i>Reports</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3>OTHERS</h3>
+                <ul>
+                    <li class="has-submenu">
+                        <a href="#"><i class="fas fa-cog"></i>Settings</a>
+                        <ul class="submenu">
+                            <li><a href="add-officers.html"><i class="fas fa-user-plus"></i>Add Officers</a></li>
+                            <li><a href="edit-officers.html"><i class="fas fa-user-edit"></i>Edit Officers</a></li>
+                            <li><a href="receiving-types.html"><i class="fas fa-list-alt"></i>Receiving Types</a></li>
+                            <li class="active"><a href="common-issues.html"><i class="fas fa-exclamation-circle"></i>Common Issues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../accounts.html"><i class="fas fa-users"></i>Accounts</a></li>
+                    <li><a href="../help.html"><i class="fas fa-question-circle"></i>Help</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="header-title">
+                    <h1>State Ministry of Home Affairs</h1>
+                    <h2>Investigation Management Portal</h2>
+                </div>
+                <div class="user-profile">
+                    <img src="../profile-pic.jpg" alt="Profile Picture">
+                    <div class="user-info">
+                        <h3>Didula</h3>
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="receiving-types-container">
+                    <div class="page-header">
+                        <h2>Common Issues</h2>
+                        <a href="add-new.html" class="btn btn-add" id="addNewIssue">
+                            <i class="fas fa-plus"></i> Add new
+                        </a>
+                    </div>
+
+                    <div class="receiving-types-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Comment</th>
+                                    <th>Status</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>නොදනු කලා</td>
+                                    <td>Active</td>
+                                    <td><a href="#" class="edit-link">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td>වේදිකා හා යොමු කලා</td>
+                                    <td>Active</td>
+                                    <td><a href="#" class="edit-link">Edit</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ප්‍රකාශ ලබාගත් කලා</td>
+                                    <td>Active</td>
+                                    <td><a href="#" class="edit-link">Edit</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
