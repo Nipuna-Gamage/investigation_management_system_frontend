@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Officers - Investigation Management Portal</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar with updated settings submenu -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="../ministry-logo.png" alt="Ministry Logo">
+            </div>
+            
+            <div class="menu-section">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="my-cases.html"><i class="fas fa-folder"></i>My cases</a></li>
+                    <li><a href="add-investigations.html"><i class="fas fa-plus"></i>Add investigations</a></li>
+                    <li><a href="search-person.html"><i class="fas fa-user"></i>Search person</a></li>
+                    <li><a href="reports.html"><i class="fas fa-chart-bar"></i>Reports</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3>OTHERS</h3>
+                <ul>
+                    <li class="has-submenu">
+                        <a href="#"><i class="fas fa-cog"></i>Settings</a>
+                        <ul class="submenu">
+                            <li><a href="add-officers.html"><i class="fas fa-user-plus"></i>Add Officers</a></li>
+                            <li class="active"><a href="edit-officers.html"><i class="fas fa-user-edit"></i>Edit Officers</a></li>
+                            <li><a href="receiving-types.html"><i class="fas fa-list-alt"></i>Receiving Types</a></li>
+                            <li><a href="common-issues.html"><i class="fas fa-exclamation-circle"></i>Common Issues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accounts.html"><i class="fas fa-users"></i>Accounts</a></li>
+                    <li><a href="help.html"><i class="fas fa-question-circle"></i>Help</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <div class="header-title">
+                    <h1>State Ministry of Home Affairs</h1>
+                    <h2>Investigation Management Portal</h2>
+                </div>
+                <div class="user-profile">
+                    <img src="profile-pic.jpg" alt="Profile Picture">
+                    <div class="user-info">
+                        <h3>Didula</h3>
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="edit-officers-container">
+                    <!-- User Selection Section -->
+                    <div class="user-select-section">
+                        <h2>User accounts</h2>
+                        <div class="mandatory-note">
+                            <span class="asterisk">*</span> Fields tag with star are mandatory and MUST be filled.
+                        </div>
+                        
+                        <div class="select-form">
+                            <div class="form-group">
+                                <label for="officerSelect">Name<span class="required">*</span></label>
+                                <select id="officerSelect" required>
+                                    <option value="">Select an officer</option>
+                                    <!-- Options will be populated dynamically -->
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-select">Select</button>
+                        </div>
+                    </div>
+
+                    <!-- Edit Form Section -->
+                    <div class="edit-form-section">
+                        <h2>Edit user accounts</h2>
+                        <form class="edit-officer-form">
+                            <div class="form-group">
+                                <label for="userName">User Name<span class="required">*</span></label>
+                                <input type="text" id="userName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="officerName">Officer name<span class="required">*</span></label>
+                                <input type="text" id="officerName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subjectCode">Subject code<span class="required">*</span></label>
+                                <input type="text" id="subjectCode" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="post">Post</label>
+                                <input type="text" id="post">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="groupName">Group Name<span class="required">*</span></label>
+                                <select id="groupName" required>
+                                    <option value="admin">Administrator (Admin)</option>
+                                    <!-- Add other options as needed -->
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="staffLevel">Staff Level<span class="required">*</span></label>
+                                <select id="staffLevel" required>
+                                    <option value="no">No</option>
+                                    <!-- Add other options as needed -->
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone<span class="required">*</span></label>
+                                <input type="tel" id="phone" required>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-cancel">Cancel</button>
+                                <button type="reset" class="btn btn-reset">Reset</button>
+                                <button type="submit" class="btn btn-update">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
