@@ -1026,3 +1026,98 @@ footer {
         justify-content: center;
     }
 }
+
+/* Account Page Styles */
+.account-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.account-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.user-details {
+    margin-bottom: 30px;
+}
+
+.detail-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.detail-item label {
+    font-weight: bold;
+    width: 100px;
+}
+
+.change-password-form {
+    margin-top: 30px;
+}
+
+.mandatory-note {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.mandatory-note .asterisk {
+    color: red;
+    margin-right: 5px;
+}
+
+#changePasswordForm .form-group {
+    margin-bottom: 15px;
+}
+
+#changePasswordForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+#changePasswordForm .required {
+    color: red;
+    margin-left: 4px;
+}
+
+#changePasswordForm input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+#changePasswordForm input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.form-actions {
+    margin-top: 20px;
+}
+
+.btn-save {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-save:hover {
+    opacity: 0.9;
+}
