@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Person - Investigation Management Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (Same structure as other pages) -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="ministry-logo.png" alt="Ministry Logo">
+            </div>
+            
+            <div class="menu-section">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="my-cases.html"><i class="fas fa-folder"></i>My cases</a></li>
+                    <li><a href="add-investigations.html"><i class="fas fa-plus"></i>Add investigations</a></li>
+                    <li class="active"><a href="search-person.html"><i class="fas fa-user"></i>Search person</a></li>
+                    <li><a href="reports.html"><i class="fas fa-chart-bar"></i>Reports</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3>OTHERS</h3>
+                <ul>
+                    <li class="has-submenu">
+                        <a href="#"><i class="fas fa-cog"></i>Settings</a>
+                        <ul class="submenu">
+                            <li><a href="Settings/add-officers.html"><i class="fas fa-user-plus"></i>Add Officers</a></li>
+                            <li><a href="Settings/edit-officers.html"><i class="fas fa-user-edit"></i>Edit Officers</a></li>
+                            <li><a href="Settings/receiving-types.html"><i class="fas fa-list-alt"></i>Receiving Types</a></li>
+                            <li><a href="Settings/common-issues.html"><i class="fas fa-exclamation-circle"></i>Common Issues</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accounts.html"><i class="fas fa-users"></i>Accounts</a></li>
+                    <li><a href="help.html"><i class="fas fa-question-circle"></i>Help</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="header-title">
+                    <h1>State Ministry of Home Affairs</h1>
+                    <h2>Investigation Management Portal</h2>
+                </div>
+                <div class="user-profile">
+                    <img src="profile-pic.jpg" alt="Profile Picture">
+                    <div class="user-info">
+                        <h3>Didula</h3>
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content">
+                <!-- Search Section -->
+                <div class="search-container">
+                    <h2>Search Person</h2>
+                    <div class="search-box">
+                        <div class="search-field">
+                            <label for="searchInput">Name / NIC</label>
+                            <input type="text" id="searchInput" placeholder="Enter name or NIC number">
+                        </div>
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+
+                <!-- Results Section -->
+                <div class="search-results">
+                    <div class="officer-info">
+                        <p>Officer: Nisansala HAG - Assistant secretary</p>
+                    </div>
+                    <div class="results-list" id="resultsList">
+                        <!-- Results will be populated here via JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>© 2024 Inquiry Management Portal. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
