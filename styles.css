@@ -108,15 +108,26 @@ header {
     gap: 10px;
 }
 
-.user-profile img {
+.avatar-circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-letter {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .user-info h3 {
     font-size: 16px;
+    margin: 0;
 }
 
 .user-info span {
