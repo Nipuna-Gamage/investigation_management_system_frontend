@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Ministry of Home Affairs - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            background-color: white;
+        }
+
+        .login-section {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 20px;
+            
+        }
+
+        .background-circle {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 400px;
+            height: 400px;
+            background: #000;
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .background-circle2 {
+            position: absolute;
+            left: 65%;
+            bottom: 65%;
+            width: 200px;
+            height: 200px;
+            background: #000;
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .login-card {
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            z-index: 1;
+            border: 1px solid #000;
+        }
+
+        .login-card h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #333;
+        }
+
+        .login-card p {
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .form-group input:focus {
+            border-color: #4a7;
+            box-shadow: 0 0 0 2px rgba(68, 170, 119, 0.1);
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background: #3b653b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .login-button:hover {
+            background: #2d4f2d;
+        }
+
+        .ministry-section {
+            width: 50%;
+            background-color: #94A594;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            color: white;
+            text-align: center;
+            border-radius: 16px;
+        }
+
+        .ministry-logo {
+            width: 60%;
+            margin-bottom: 24px;
+            height: 75%;
+        }
+
+        .ministry-title {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .portal-subtitle {
+            font-size: 20px;
+        }
+
+        .ministry-card {
+            background-color: #3a5b226b;
+            border-radius: 50px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80%;  
+            width: 80%;  
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .login-section,
+            .ministry-section {
+                width: 100%;
+            }
+            .ministry-section {
+                padding: 60px 20px;
+                border-radius: 16px;
+            }
+            .background-circle {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <div class="background-circle"></div>
+            <div class="background-circle2"></div>
+            <div class="login-card">
+                <h2>Welcome back!</h2>
+                <p>Enter your Credentials to access your account</p>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="ministry-section">
+            <div class="ministry-card">
+                <img src="/img/ministry-logo.png" alt="sri Lanka government Logo" class="ministry-logo">
+                <h1 class="ministry-title">State Ministry of Home Affairs</h1>
+                <p class="portal-subtitle">Investigation Management Portal</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
